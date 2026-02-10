@@ -1,0 +1,115 @@
+/* ----------------------------
+   Global / Base
+   ---------------------------- */
+:root{
+  --brand-blue: #0d6efd;
+  --brand-gold: #d4af37; /* gold */
+  --text-dark: #222;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+  background: #fff;
+  padding-top: 72px; /* offset for fixed navbar */
+}
+
+/* Links */
+a { text-decoration: none; }
+
+/* NAVBAR tweaks */
+.navbar-brand img { max-height: 50px; }
+
+/* ----------------------------
+   Hero styles (home)
+   ---------------------------- */
+.hero-section {
+  height: 80vh;
+  min-height: 420px;
+  background: url("../images/hero-bg.jpg") center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.hero-section .overlay { position:absolute; inset:0; background: rgba(2,10,28,0.45); }
+.hero-content { position:relative; z-index:2; }
+.hero-logo { max-width: 220px; }
+
+/* simple gold button */
+.btn-gold {
+  background-color: var(--brand-gold);
+  color: #fff;
+  border: none;
+}
+.btn-gold:hover { background-color: #b58f2d; }
+
+/* small hero variants for other pages */
+.about-hero, .services-hero, .contact-hero {
+  height: 35vh;
+  min-height: 180px;
+  background: linear-gradient(rgba(2,10,28,0.45), rgba(2,10,28,0.45));
+  display:flex;
+  align-items:center;
+}
+.about-hero .overlay, .services-hero .overlay, .contact-hero .overlay {
+  display:none;
+}
+
+/* ----------------------------
+   Cards & destinations
+   ---------------------------- */
+.country-card img,
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Why choose us */
+.why-choose-us h4 { color: var(--brand-blue); }
+
+/* CTA */
+.cta { background:#f8f9fa }
+
+/* ----------------------------
+   Scroll-top button
+   ---------------------------- */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 999;
+  font-size: 20px;
+  background-color: var(--brand-gold);
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#scrollTopBtn:hover { opacity: 0.9; }
+
+/* ----------------------------
+   WhatsApp floating button
+   ---------------------------- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
+  z-index: 1000;
+}
+.whatsapp-float img { width: 60px; height: 60px; }
+
+/* ----------------------------
+   Footer
+   ---------------------------- */
+.footer { 
+    background-color:  #003399;
+    border-top: 1px solid #fff;
+ }
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+  .hero-section { height: 55vh; }
+  .country-card img { height: 180px; }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mahad Educational Consult — Home</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <!-- Replace logo.png with your actual logo (transparent preferred) -->
+        <img src="images/logo.png" alt="Mahad Educational Consult" height="50">
+        <span class="fw-bold text-primary d-none d-md-inline">Mahad Educational Consult</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary ms-lg-3" href="contact.html">Apply Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero-section d-flex align-items-center text-center text-white">
+    <div class="overlay"></div>
+    <div class="container position-relative">
+      <h1 class="display-4 fw-bold mb-3">Your Gateway to Global Opportunities</h1>
+      <p class="lead mb-4 ">
+        Study abroad • Visa assistance • Exam registration & tutorials • Tourist and vacations
+      </p>
+      <a class="btn btn-lg btn-gold mt-3" href="contact.html">Apply Now</a>
+    </div>
+  </header>
+
+  <!-- DESTINATIONS (country cards) -->
+  <section class="destinations py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Popular Study Destinations</h2>
+        <p class="text-muted">We handle applications for the UK, Canada, USA, Schengen countries, etc.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- UK -->
+        <div class="col-md-4">
+          <div class="card country-card h-100 border-0 shadow-sm">
+            <img src="images/uk.jpg" class="card-img-top" alt="Study in the UK">
+            <div class="card-body">
+              <h5 class="card-title">Study in the UK</h5>
+              <p class="card-text">Explore world-class universities, scholarships, and quality education pathways.</p>
+              <a href="services.html#study" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Canada -->
+        <div class="col-md-4">
+          <div class="card country-card h-100 border-0 shadow-sm">
+            <img src="images/canada.jpg" class="card-img-top" alt="Study in Canada">
+            <div class="card-body">
+              <h5 class="card-title">Study in Canada</h5>
+              <p class="card-text">Learn in a multicultural environment with strong post-grad opportunities.</p>
+              <a href="services.html#study" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- USA -->
+        <div class="col-md-4">
+          <div class="card country-card h-100 border-0 shadow-sm">
+            <img src="images/usa.jpg" class="card-img-top" alt="Study in USA">
+            <div class="card-body">
+              <h5 class="card-title">Study in the USA</h5>
+              <p class="card-text">Access top-ranked institutions, research, and scholarship opportunities.</p>
+              <a href="services.html#study" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-choose-us py-5 bg-light">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 mb-3">
+          <h4>Expert Consultancy</h4>
+          <p>Experienced advisors guiding visa & admission processes.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h4>All-in-one Service</h4>
+          <p>Exam registration, tutorials, visa processing, and tourist planning.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h4>Trusted & Transparent</h4>
+          <p>Clear fees, honest guidance, and timely communication.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIMPLE CALL TO ACTION -->
+  <section class="cta py-5">
+    <div class="container text-center">
+      <h3>Ready to start your journey?</h3>
+      <p class="text-muted">Speak with a consultant or send us your application details today.</p>
+      <a class="btn btn-primary btn-lg" href="contact.html">Apply Now</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-white py-4">
+    <div class="container text-center">
+      <p class="mb-1">No 31, First Shalom Complex beside Gastab Filling Station, along Ojoo–Moniya Express Road, Ibadan, Oyo State.</p>
+      <p class="mb-1">Phone: 07032356873 | 09135188300</p>
+      <small class="text-muted">© 2025 Mahad Educational Consult. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button id="scrollTopBtn" title="Go to top">&uarr;</button>
+
+  <!-- WhatsApp button -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/2347032356873" target="_blank" rel="noopener">
+      <img src="images/whatsapp-icon.png" alt="Chat with us on WhatsApp" width="40" height="40">
+    </a>
+  </div>
+
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
